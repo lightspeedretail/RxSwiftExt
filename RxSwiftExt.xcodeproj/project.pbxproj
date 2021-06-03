@@ -49,6 +49,8 @@
 		3DBDE6001FBBB09A00DF47F9 /* AndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDE5FD1FBBB05400DF47F9 /* AndTests.swift */; };
 		3DBDE6011FBBB09A00DF47F9 /* AndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDE5FD1FBBB05400DF47F9 /* AndTests.swift */; };
 		4A73956C206D501300E2BE2D /* UIViewPropertyAnimator+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A73956B206D501300E2BE2D /* UIViewPropertyAnimator+Rx.swift */; };
+		4CB47665266980D800503513 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB47664266980D800503513 /* RxSwift.framework */; };
+		4CB47669266980ED00503513 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB47668266980ED00503513 /* RxCocoa.framework */; };
 		5386076F1E6F1C0A000361DE /* mapTo+RxCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386076E1E6F1C0A000361DE /* mapTo+RxCocoa.swift */; };
 		538607731E6F1D51000361DE /* MapToTests+RxCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538607711E6F1CFB000361DE /* MapToTests+RxCocoa.swift */; };
 		538607AA1E6F334B000361DE /* apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386079A1E6F334B000361DE /* apply.swift */; };
@@ -336,6 +338,8 @@
 		3DBDE5FB1FBBAE3900DF47F9 /* and.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = and.swift; sourceTree = "<group>"; };
 		3DBDE5FD1FBBB05400DF47F9 /* AndTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndTests.swift; sourceTree = "<group>"; };
 		4A73956B206D501300E2BE2D /* UIViewPropertyAnimator+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewPropertyAnimator+Rx.swift"; sourceTree = "<group>"; };
+		4CB47664266980D800503513 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB47668266980ED00503513 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5386076E1E6F1C0A000361DE /* mapTo+RxCocoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "mapTo+RxCocoa.swift"; path = "Source/RxCocoa/mapTo+RxCocoa.swift"; sourceTree = SOURCE_ROOT; };
 		538607711E6F1CFB000361DE /* MapToTests+RxCocoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapToTests+RxCocoa.swift"; sourceTree = "<group>"; };
 		5386079A1E6F334B000361DE /* apply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = apply.swift; path = Source/RxSwift/apply.swift; sourceTree = SOURCE_ROOT; };
@@ -425,6 +429,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB47669266980ED00503513 /* RxCocoa.framework in Frameworks */,
+				4CB47665266980D800503513 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +672,8 @@
 		9DAB77991D6763AC007E85BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CB47668266980ED00503513 /* RxCocoa.framework */,
+				4CB47664266980D800503513 /* RxSwift.framework */,
 				E36BDFB81F38755F008C9D56 /* tvOS */,
 				62512C561F0EAEB90083A89F /* macOS */,
 				62512C551F0EAEB20083A89F /* iOS */,
@@ -1345,10 +1353,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1376,10 +1380,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
