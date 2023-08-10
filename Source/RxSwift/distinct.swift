@@ -9,6 +9,8 @@
 import Foundation
 import RxSwift
 
+public typealias Observable = RxSwift.Observable
+
 extension Observable {
     /**
      Suppress duplicate items emitted by an Observable
